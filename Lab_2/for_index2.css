@@ -1,0 +1,26 @@
+h1, h2, h3{
+color: purple;
+font-family: "Monotupe Corsiva";
+}
+.C1{
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.C2{
+    color: yellow;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.C3{
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
+table, th, td {
+    border: 1px solid black;
+  }
+  table td {
+    color: blue;
+  }
+  

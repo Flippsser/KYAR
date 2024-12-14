@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+<title>Gradients</title>
+<style>
+div {
+    display: inline-block;
+    border: 1px solid;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+#grd1 {
+    background-image: linear-gradient(red, blue);
+}
+#grd2 {
+    background-image: repeating-linear-gradient(45deg, red, red 5px,blue 5px, blue 10px);
+}
+#grd3 {
+    background-image: radial-gradient(red, blue);
+}
+#grd4 {
+    background-image: repeating-radial-gradient(red,red 5px,black 5px, black 10px);
+}
+#grd5 {
+    background-image: radial-gradient(cyan, red, transparent), linear-gradient(45deg, yellow, purple);
+}
+    </style>
+</head>
+<body>
+    <div id="grd1"></div>
+    <div id="grd2"></div>
+    <div id="grd3"></div>
+    <div id="grd4"></div>
+    <div id="grd5"></div>
+</body>
+</html>

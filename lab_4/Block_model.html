@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Блочная модель</title>
+        <style type="text/css">
+            div{
+                padding: 10px;
+                display: inline-block;
+            }
+            span{
+                display: inline-block;
+                padding: 5px;
+                margin: 5px;
+                background-color: #FFA500;
+                border: solid #FF4500;
+            }
+            .p1{
+                width: 400px;
+                text-align: center;
+                border: solid #FF4500;
+                margin: auto;
+            }
+            .p2{
+                border: solid red 5px;
+                border-radius: 20px/40px;
+                box-shadow: inset 2px 2px 8px 8px rgba(0, 0, 0,.5);
+                overflow:auto;
+            }.p3{
+                border: solid #FF6347;
+            }
+            
+            .border_box{
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            border: 10px solid black;
+            }
+            .content_box{
+            width: 161px;
+            height: 161px;
+            box-sizing: content-box;
+            border: 10px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="blok" style="border: 6px outset rgb(215, 0, 0);">R</div>
+        <div class="blok" style="border: 6px dashed rgb(47, 232, 47);">G</div>
+        <div class="blok" style="border: 6px dotted rgb(42, 42, 255);">B</div>
+        <div class="blok" style="border: 6px double rgb(0, 191, 255);">C</div>
+        <div class="blok" style="border: 6px groove rgb(255, 0, 255);">M</div>
+        <div class="blok" style="border: 6px inset rgb(221, 221, 3);">Y</div>
+        <div class="blok" style="border: 6px solid rgb(0, 0, 0);">K</div>
+        <p class="p1">Для первого абзаца <span>задать</span> ширину 400 px и его выравнивание с текстом по центру, сплошную границу цвета #FF7F50.</p>
+        <p class="p2">Для второго абзаца <span>установить</span> сплошную границу красного цвета с толщиной 5 px и с эллиптическими углами округления 20 px/40 px; добавить внутреннюю тень rgba(0, 0, 0, .5) цвета со смещением по горизонтали вправо и по вертикали вниз на 2 px, с размытием 8 px и расширением 8 px. Установить значение auto свойства overflow.</p>
+        <p class="p3">Третий абзац должен <span>иметь</span> сплошную границу цвета
+            #FF6347.</p>
+            <div class="border_box" style="text-align: center;">1</div>
+            <div class="content_box" style="text-align: center;">2</div>  
+    </body>
+</html>

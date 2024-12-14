@@ -1,0 +1,352 @@
+div{
+    display: inline-block;
+    margin: 30px;
+}
+img{
+    width: 300px;
+    height: 200px;
+}
+.one:hover{
+    transform: scale(0.5);
+}
+.two:hover{
+    transform: rotate(45deg);
+}
+.three:hover{
+    transform: translate(50px);
+}
+.four:hover{
+    transform: skew(-20deg);
+}
+button{
+    display: inline-block;
+    margin: 15px;
+    width: 100px;
+    height: 30px;
+}
+.but1:hover{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+.but2:hover{
+    background-color: rgb(255, 255, 255);
+    border: 4px solid red;
+    outline: 4px solid yellow;
+}
+.but3:hover{
+    border-top: 4px solid green;
+    border-bottom: 4px solid green;
+    background-color: rgb(255, 255, 255);
+    border-left: none;
+    border-right: none;
+}
+.but4:hover{
+    border-right: 4px solid blue;
+    border-left: 4px solid blue;
+    background-color: rgb(255, 255, 255);
+    border-top: none;
+    border-bottom: none;
+}
+.but5:hover{
+    background-color: rgb(255, 255, 255);
+    border: hidden;
+    background-image: radial-gradient(yellow, yellow 10%, rgb(250, 0, 255) 35%, rgb(0, 225, 255) 85%)
+}
+/*3*/
+.five{
+    transform-style: preserve-3d;
+    transform: perspective(300px) rotateX(45deg);
+}
+.six{
+    transform-style: preserve-3d;
+    transform: perspective(300px) rotateY(45deg);
+}
+.seven{
+    transform-style: preserve-3d;
+    transform: perspective(300px) rotateX(-45deg);
+}
+.eight{
+    transform-style: preserve-3d;
+    transform: perspective(300px) rotateY(-45deg);
+}
+/*4*/
+#one {
+    display: inline-block;
+
+    animation: img1 5s linear 1;
+    animation-fill-mode: forwards;
+
+    transform-style: preserve-3d;
+    transform:perspective(300px) rotateY(40deg);
+    position: relative;
+}
+@keyframes img1{
+    0%{
+        left: 0;
+    }
+    50%{
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        left:0;
+    }   
+    100%{
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+    }
+}
+#two {
+    display: inline-block;
+
+    animation: img2 5s linear 1;
+    animation-fill-mode: forwards;
+
+    transform-style: preserve-3d;
+    transform:perspective(300px) rotateY(40deg);
+    position: relative;
+}
+@keyframes img2{
+    0%{
+        margin-left: -200px;
+        left: 0;
+    }
+    50%{
+        margin-left: -200px;
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        left:0;
+    }   
+    100%{
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        filter: blur(10px);
+    }
+}
+#three {
+    display: inline-block;
+
+    animation: img3 5s linear 1;
+    animation-fill-mode: forwards;
+
+    transform-style: preserve-3d;
+    transform:perspective(300px) rotateY(40deg);
+    position: relative;
+}
+@keyframes img3{
+    0%{
+        margin-left: -200px;
+        left: 0;
+    }
+    50%{
+        margin-left: -200px;
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        left:0;
+    }   
+    100%{
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        filter:grayscale(1);
+    }
+}
+#four {
+    display: inline-block;
+    
+    animation: img4 5s linear 1;
+    animation-fill-mode: forwards;
+
+    transform-style: preserve-3d;
+    transform:perspective(300px) rotateY(40deg);
+    position: relative;
+}
+@keyframes img4{
+    0%{
+        margin-left: -200px;
+        left: 0;
+    }
+    50%{
+        margin-left: -200px;
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        left:0;
+    }   
+    100%{
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        filter:invert(1);
+    }
+}
+/*5*/
+.aaaaaaa{
+    border: 3px solid black;
+    width: 700px;
+    height: 500px;
+    background-color: azure;
+    animation: aaaaaaa 5s ease-in infinite;
+    
+
+    position: relative;
+}
+@keyframes aaaaaaa
+{
+   0% { 
+    background-image: url(img/a.jpg);
+    
+    
+}
+   25% { 
+    background-image: url(img/b.jpg);
+    
+    
+}
+   50% { 
+    background-image: url(img/c.jpg);
+    
+}
+    75% { 
+    background-image: url(img/d.jpg);
+ 
+}
+    100% { 
+    background-image: url(img/i.jpg);
+ 
+}
+}
+/*6*/
+.one11{
+    display: block;
+    width: 200px;
+    height: 170px;
+
+    animation: img11 1s linear infinite;
+    animation-direction: alternate;
+    position: relative;
+
+}
+@keyframes img11{
+    0%{
+        left: 0;
+    }
+    100%{
+       left:200px;
+    }
+}
+.one12{
+    display: block;
+    width: 200px;
+    height: 170px;
+
+    animation: img12 1s linear infinite;
+    animation-direction: alternate;
+    position: relative;
+
+}
+@keyframes img12{
+    0%{
+        left: 0;
+    }
+    50%{
+        left:100px;
+        border-radius: 200px;
+    }
+    100%{
+       left:200px;
+    }
+}
+.one13{
+    display: block;
+    width: 200px;
+    height: 170px;
+
+    animation: img13 4s linear infinite;
+    
+    position: relative;
+
+}
+@keyframes img13{
+    0%{
+        left: -700px;
+    }
+    100%{
+       left:700px;
+    }
+}
+.one14{
+    display: block;
+    width: 200px;
+    height: 170px;
+
+    animation: img14 1s linear infinite;
+    animation-direction: alternate;
+    position: relative;
+
+}
+@keyframes img14{
+    0%{
+        top: 0;
+    }
+    100%{
+        top:50px;
+    }
+}
+.one15{
+    display: block;
+    width: 200px;
+    height: 170px;
+
+    animation: img15 4s linear infinite;
+    
+    position: relative;
+
+}
+@keyframes img15{
+    0%{
+        left: 0;
+        top:0;
+    }
+    25%{
+        left:0px; 
+        top:50px;
+    }
+    50%{
+        left:50px;
+        top:50px
+    }
+    75%{
+       left:50px;
+       top:0px;
+    }
+    100%{
+       left:0px;
+       top:0px;
+    }
+}
+/*7*/
+.div{
+    width: 300px;
+    height: 300px;
+    font-size: 25px;
+
+    position: relative;
+}
+.div:hover{
+    animation: div 5s linear infinite;
+}
+@keyframes div{
+    0%{color: rgb(156, 42, 42);}
+    20%{color: rgb(145, 161, 42);}
+    40%{color: rgb(100, 125, 42);}
+    60%{color: rgb(92, 105, 44);}
+    80%{color: rgb(132, 42, 105);}
+    100%{color: rgb(185, 92, 32);}
+}
+/*8*/
+h1{
+    animation: h1 5s infinite;
+    color: red;
+}
+@keyframes h1
+{
+   0% { opacity: 0%;}
+   50% { opacity: 80%;}
+   100% { opacity: 0%;}
+}
