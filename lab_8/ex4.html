@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+.nav li{
+display: inline;
+}
+.list li{
+display: block;
+}
+.nav li .list{
+display: none;
+position: absolute;
+}
+nav li:hover .list{
+display: block;
+}
+a{
+border: 1px solid black;
+text-decoration: none;
+text-align: center;
+color: black;
+padding: 10px 80px;
+}
+.list li a{
+ padding: 10px 40px;
+margin-left: 165px;
+}
+.list{
+    list-style-type:none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.list li{
+padding-bottom: 20px;
+ }
+#pi{
+padding: 10px 49px;
+background: none;
+}
+#iivd,#isit{
+background: none;
+}
+.nav li a{
+background: url(facultet.png) no-repeat;
+background-size: 39px;
+}
+
+.nav > li:nth-child(2):hover > a {
+    background-position: top -40px left;
+}
+
+.nav > li:nth-child(3):hover > a {
+    background-position: bottom left;
+}
+
+.nav > li:last-child:hover > a {
+    background-position: top -80px left;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="nav">
+          <li><a href="https://www.belstu.by/">БГТУ</a></li>
+          <li>
+            <a href="https://it.belstu.by/">ИТ</a>
+            <ul class="list">
+              <li><a id="isit" href="https://isit.belstu.by/">Кафедра ИСиТ</a></li>
+              <li><a id="iivd" href="https://belstu.by/fakultety/fit/ivd">Кафедра ИиВД</a></li>
+              <li><a id="pi" href="https://belstu.by/fakultety/fit/pi">Кафедра ПИ</a></li>
+            </ul>
+          </li>
+          <li><a href="https://pim.belstu.by/">ПиМ</a></li>
+          <li><a href="https://htit.belstu.by/">ХТиТ</a></li>
+        </ul>
+      </nav>
+</body>
+</html>

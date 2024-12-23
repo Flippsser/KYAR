@@ -334,12 +334,26 @@ button{
     }
 /*8*/
 h1{
-    animation: h1 5s infinite;
+    
     color: red;
 }
-@keyframes h1
-{
-   0% { opacity: 0%;}
-   50% { opacity: 80%;}
-   100% { opacity: 0%;}
+
+
+
+  /* 2 ex from 8lab */
+.nav{
+    list-style: none;
+    text-align: center; 
+}
+.nav li {
+    display: inline-block;
+}
+.nav a {
+    text-decoration: none; 
+    padding: 10px 25px; 
+    margin-right: -5px;
+    font-size: 20px; 
+    background-color:yellow; 
+    border: 1px solid black; 
+    color: black; 
 }
