@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <style>
+    .grid {
+        display: grid;
+        grid-template-areas: "b b b" "a c d" "e e e";
+        grid-template-columns: 7vw 45vw 45vw;
+        grid-template-rows: 12vh 71vh 10vh;
+        grid-gap: 1vw;
+    }
+    div[style*="grid-area"] {
+        font-size: 20px;
+        border: 5px solid black;
+        padding: 10px;
+    }
+    .nav ul {
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        width: 70px; 
+        padding-top: 75px;
+        font-size: 17px;
+    }
+    a {
+        display: block;
+        background: rgb(158, 199, 114);
+        border: 1px solid black;
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        box-sizing: border-box; 
+    }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div style="grid-area: a;">
+            <nav class="nav">
+                        <ul>
+                            <li><a href="https://developer.mozilla.org/ru/docs/Web/CSS/Reference">CSS3</a></li>
+                            <li><a href="https://developer.mozilla.org/ru/docs/Learn_web_development/Getting_started/Your_first_website/Creating_the_content">HTML</a></li>
+                            <li><a href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout">Grid-верстка</a></li>
+                        </ul>
+            </nav>
+        </div>
+        <div style="grid-area: b;">
+            <p>Grid Вёрстка </p>
+        </div>
+        <div style="grid-area: c;">
+            <p>История</p>
+            <p>В начале 2000-х, когда веб-разработка ещё только набирала обороты, основными инструментами для создания макетов были таблицы и фреймы. Однако, к 2010 году использование таблиц для макетирования упало с 90% до менее чем 30%, уступая место более гибким методам, таким как позиционирование на основе float.</p>
+            <p>Однако, эти методы имели свои недостатки. Таблицы ограничивали творческие возможности дизайнеров и усложняли поддержку, а float-элементы, хотя и предоставляли больше гибкости, создавали сложности с адаптивным дизайном и порядком элементов. Это приводило к увеличению времени разработки и сложности кода. Исследование, проведенное в 2014 году, показало, что примерно 50% времени разработки веб-страницы тратилось именно на борьбу с ограничениями макета.</p>
+            <p>Flexbox и CSS Grid, две революционные технологии в мире веб-дизайна, были разработаны и внедрены разными людьми и организациями в разное время.</p>
+        </div>
+        <div style="grid-area: d;"><p>
+            <p>Развитие CSS и введение Flexbox в 2009 году кардинально изменили подход к созданию макетов. Flexbox предложил простой и мощный способ управления макетом, особенно в плане выравнивания и распределения пространства между элементами.</p>
+            <p>Flexbox был официально внедрен в рабочий черновик спецификации CSS в 2009 году World Wide Web Consortium (W3C). Первоначальная спецификация была написана Табом Аткинсом Jr. (работал в Google) и другими разработчиками.</p>
+            <p>Начиная с 2011 года, основные браузеры начали внедрять поддержку Flexbox, хотя полная поддержка во всех основных браузерах была достигнута только к 2015 году.</p>
+            <p>Работа над CSS Grid началась в 2012 году как способ устранения ограничений Flexbox в создании двумерных макетов. Идея состояла в том, чтобы предоставить более эффективный и гибкий способ для создания сложных макетов с несколькими строками и колонками.</p>
+            <p>CSS Grid был официально внедрен в спецификацию CSS W3C в 2017 году. Одним из ключевых разработчиков спецификации CSS Grid является Рейчел Эндрю (известная в профессиональных кругах эксперт по веб-разработке).</p>
+        </div>
+        <div style="grid-area: e;">
+           <p> Бразовский М.А. 10ая группа, 2ая подгруппа</p>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>

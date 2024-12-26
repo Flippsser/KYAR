@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="skeleton.css">
+<link rel="stylesheet" href="normalize.css">
+ <style>
+div[class*="columns"]{
+    border: 1px solid black;
+    background-color: rgb(185, 224, 119);
+    text-align: center;
+    color:black;
+}
+div[class*="row"]{
+	margin: 20px ;
+}
+.row1{
+	height: 100px;
+}
+.row1 div{
+	border:none;
+	background-color: white;
+	height: 100px;
+}
+.row2{
+	height: 80px;
+}
+.row2 div{
+	height: 70px;
+}
+.row3{
+	height: 340px;
+}
+.row3 div{
+    padding: 5px;
+	height: 340px;
+	font-size: 14px;	
+}
+img{
+	width: 100px;
+	height: 100px;
+}
+.menu{
+    list-style-type: none;
+    font-size: 0; 
+}
+li{
+    display: inline-block;
+    margin-right: 10px;
+}
+a{
+    font-size: 15px;
+    display: inline-block; 
+    padding: 40px 20px;
+    text-decoration: none;
+    border: 1px solid black;
+	background-color:  rgb(255, 183, 0);
+	color:black;    
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="row1">
+            <div class="three columns">
+                <img src="immg/fit.jpg">
+            </div>
+            <div class="nine columns">
+                <nav class="nav">
+                    <ol class="menu">
+                        <li><a href = "ex_1_1.html">Задание 1.1</a></li>
+                        <li><a href = "ex_1_2.html">Задание 1.2</a></li>
+                        <li><a href = "ex_2.html">Задание 2</a></li>
+                        <li><a href = "ex_3.html">Задание 3.1</a></li>
+                        <li><a href = "ex_3_2.html">Задание 3.2</a></li>            
+                    </ol>
+                </nav>
+            </div> 
+        </div>
+        <div class="row2">
+                <div class="three columns">
+                    Грид-элемент и Грид-линия
+                </div>
+                <div class="three columns">
+                    Грид-ячейка, Грид-полоса и Грид-область
+                </div>
+                <div class="three columns">
+                    Грид-сетка
+                </div>
+                <div class="three columns">
+                    Контейнер-сетка
+                </div>
+        </div>
+        <div class="row3">
+            <div class="three columns">
+                Грид-элемент: дочерний элемент, прямой потомок грид-контейнера. Подчиняется правилам раскладки гридов.
+                Грид-линия: разделительная линия, формирующая структуру грида. Может быть как вертикальной (грид-линия колонки), так и горизонтальной (грид-линия ряда). Располагается по обе стороны от колонки или ряда. Используется для привязки грид-элементов.
+            </div>
+            <div class="three columns">
+                Грид-ячейка: пространство между соседними грид-линиями. Единица грид-сетки.
+                Грид-полоса: пространство между двумя соседними грид-линиями. Может быть проще думать о грид-полосе как о ряде или колонке.
+                Грид-область: область, ограниченная четырьмя грид-линиями. Может состоять из любого количества ячеек как по горизонтали, так и по вертикали.
+            </div>
+            <div class="three columns">
+                Сетка (grid) представляет собой набор пересекающихся горизонтальных и вертикальных линий, делящих пространство grid-контейнера на области сетки, в которые могут быть помещены элементы сетки.
+            </div>
+            <div class="three columns">
+                Для создания макета на основе сетки необходимо определить контейнер-сетку. Контейнер-сетка (grid container) — это блок, который устанавливает контекст форматирования по типу сетки, то есть создает область с сеткой, а дочерние элементы располагаются в соответствии с правилами компоновки сетки, а не блочной компоновки.
+            </div>	
+    </div>
+</body>
+</html>
