@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: black;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid white;
+            border-radius: 5px;
+            background-color:rgb(178, 13, 223);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid white;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 6px;
+        }
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        button {
+            background-color: rgb(116, 0, 224);
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(13, 223, 132);
+        }
+        footer {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid black;
+            text-align: center;
+        }
+        #output {
+            text-align: left;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <form id="studentForm">
+    <h1>Данные студента</h1>
+        <label for="firstName">Имя студента</label>
+        <input type="text" id="firstName" placeholder="обязательно заполнить" required>
+
+        <label for="middleName">Отчество студента</label>
+        <input type="text" id="middleName" placeholder="обязательно заполнить" required>
+
+        <label for="lastName">Фамилия студента</label>
+        <input type="text" id="lastName" placeholder="обязательно заполнить" required>
+
+        <label for="email">Адрес почты</label>
+        <input type="email" id="email" placeholder="example@gmail.com">
+
+        <label for="phone">Контактный номер</label>
+        <input type="tel" id="phone" placeholder="+375 (**) *** ** **">
+
+        <label>Какую социальную сеть вы используете?</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" id="vk" value="VK"> VK</label>
+            <label><input type="checkbox" id="telegram" value="Telegram"> Telegram</label>
+            <label><input type="checkbox" id="instagram" value="Instagram"> Instagram</label>
+        </div>
+
+        <label for="faculty">Факультет</label>
+        <select id="faculty" required>
+            <option value="">Выберите факультет</option>
+            <option value="ФИТ">ФИТ</option>
+            <option value="ТДП">ТДП</option>
+            <option value="ХТиТ">ХТиТ</option>
+            <option value="ТОФ">ТОФ</option>
+            <option value="ИЭФ">ИЭФ</option>
+        </select>
+
+        <label for="group">Группа</label>
+        <select id="group" required>
+            <option value="">Выберите группу</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+
+        <label for="course">Курс</label>
+        <select id="course" required>
+            <option value="">Выберите курс</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+
+        <button type="button" onclick="submitForm()">Отправить</button>
+    </form>
+
+    <footer id="results">
+        <h3>Заполненная информация</h3>
+        <p id="output"></p>
+    </footer>
+
+    <script>
+        function submitForm() {
+
+            const firstName = document.getElementById('firstName').value;
+            const middleName = document.getElementById('middleName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+
+            const socialNetworks = [];
+            if (document.getElementById('vk').checked) socialNetworks.push('VK');
+            if (document.getElementById('telegram').checked) socialNetworks.push('Telegram');
+            if (document.getElementById('instagram').checked) socialNetworks.push('Instagram');
+
+            const faculty = document.getElementById('faculty').value;
+            const group = document.getElementById('group').value;
+            const course = document.getElementById('course').value;
+
+            const output = `
+    Имя: ${firstName}
+    Отчество: ${middleName}
+    Фамилия: ${lastName}
+    Почта: ${email || 'Не указана'}
+    Телефон: ${phone || 'Не указан'}
+    Социальные сети: ${socialNetworks.join(', ') || 'Не указаны'}
+    Факультет: ${faculty || 'Не выбран'}
+    Группа: ${group || 'Не выбрана'}
+    Курс: ${course || 'Не выбран'}`;
+
+            document.getElementById('output').textContent = output;
+        }
+    </script>
+</body>
+
+</html>

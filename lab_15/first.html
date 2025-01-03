@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_1</title>
+    <style>
+        .gallery {
+            display: flex;
+            gap: 20px;
+            margin-top:300px;
+            margin-left: 500px;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            transition: border 0.3s;
+        }
+
+        .photo-container {
+            position: relative;
+            width: 150px;
+            height: 150px;
+        }
+
+        .description {
+            display: none;
+            width: 150px;
+            height: 150px;
+            background-color: #fff;
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.5;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="photo-container">
+            <img src="/lab_15/immg/Bitcoin.jpg" alt="Img 1" class="img_1">
+            <p class="description">Битко́йн, или битко́ин — пиринговая платёжная система, использующая одноимённую единицу для учёта операций.</p>
+        </div>
+        <img src="/lab_15/immg/eth.jpg" alt="Img 2" class="img_2">
+        <img src="/lab_15/immg/bnb.jpg" alt="Img 3" class="img_3">
+    </div>
+    <script>
+        const img1 = document.querySelector('.img_1');
+        const description = document.querySelector('.description');
+        img1.addEventListener('mouseover', () => {
+            description.style.display = 'block';
+            img1.style.visibility = 'hidden';
+        });
+        img1.addEventListener('mouseout', () => {
+            description.style.display = 'none';
+            img1.style.visibility = 'visible';
+        });
+
+
+        const img2 = document.querySelector('.img_2');
+        img2.addEventListener('click', () => {
+            if (img2.style.border) {
+                img2.style.border = '';
+            } else {
+                img2.style.border = '10px solid red';
+            }
+        });
+
+
+        const img3 = document.querySelector('.img_3');
+        const originalSrc = img3.src;
+        const hoverSrc = '/lab_15/immg/bit.jpg';
+        img3.addEventListener('mouseover', () => {
+            img3.src = hoverSrc;
+        });
+        img3.addEventListener('mouseout', () => {
+            img3.src = originalSrc;
+        });
+
+    </script>
+</body>
+</html>
