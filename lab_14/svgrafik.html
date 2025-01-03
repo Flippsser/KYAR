@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+</head>
+<body>
+        
+    <svg id="task_1" width="1440" height="200" xmlns="http://www.w3.org/2000/svg">
+        <path id="row" d="M 100 200 Q 400 50 700 200" fill="transparent" stroke="black" stroke-width="1"/>
+
+        <text font-size="36" fill="blue">
+            <textPath href="#row" startOffset="50%" text-anchor="middle">
+                Процессоры Intel
+            </textPath>
+        </text>
+        </svg>
+        
+        <svg id="task_2" width="1440" height="500" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="300" r="50" fill="blue" />
+
+        <rect x="160" y="250" width="100" height="100" fill="red"/>
+
+        <ellipse cx="370" cy="300" rx="100" ry="50" fill="green"/>
+
+        <polygon points="470,350 530,250 590,350" fill="yellow"/>
+
+        <polyline points="50,360 300,360 210,400 600,400" fill="none" stroke="purple" stroke-width="3" />
+
+        </svg>
+
+        <svg id="task_3" width="210mm" height="297mm" viewBox="0 0 210 297" xmlns="http://www.w3.org/2000/svg">
+
+            <path d="m 103.00828,113.50862 -17.827588,24.08621 11.37931,0.0948 -17.06897,23.61207 15.74138,0.18965 v 10.05173 h 16.025868 l -0.0948,-9.9569 16.12069,0.18965 -17.63793,-23.80172 11.18966,-0.28448 z" fill="green" stroke="black" stroke-width="0.5" />
+        
+            <path d="M110 150 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0" fill="red">
+                <animate attributeName="fill" values="red;orange;red" dur="2s" repeatCount="indefinite" />
+            </path>
+
+            <path d="M90 155 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0" fill="red">
+                <animate attributeName="fill" values="red;orange;red" dur="2s" repeatCount="indefinite" />
+            </path>
+
+            <path d="M100 130 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0" fill="red">
+                <animate attributeName="fill" values="red;orange;red" dur="2s" repeatCount="indefinite" />
+            </path>
+            
+            <path d="M98 144 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0" fill="red">
+                <animate attributeName="fill" values="red;orange;red" dur="2s" repeatCount="indefinite" />
+            </path>
+            
+            <path d="M100 150 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0" fill="red">
+                <animate attributeName="fill" values="yellow;blue;yellow" dur="2s" repeatCount="indefinite" />
+            </path>
+            
+            <path d="M110 134 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0" fill="red">
+                <animate attributeName="fill" values="yellow;blue;yellow" dur="2s" repeatCount="indefinite" />
+            </path>
+
+            <path d="M110 158 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0" fill="red">
+                <animate attributeName="fill" values="yellow;blue;yellow" dur="2s" repeatCount="indefinite" />
+            </path>
+
+        </svg>
+        
+      
+    <svg id="task_4" width="900" height="900" class="rotate" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900">
+        <defs>
+            <path id="home" d="M100 59.375l-18.75-18.75v-28.125h-12.5v15.625l-18.75-18.75-50 50v3.125h12.5v31.25h31.25v-18.75h12.5v18.75h31.25v-31.25h12.5z"/>
+            </defs>
+            <use xlink:href="#home" x="50" y="150" transform="rotate(35 15 200)" fill="black"/>
+            <use xlink:href="#home" x="50" y="300" transform="scale(1.2)" fill="black"/>
+            <use xlink:href="#home" x="50" y="500" transform="rotate(10 10 500)" fill="black"/>
+            <use xlink:href="#home" x="50" y="600" transform="skewX(20)" fill="black"/>
+            <use xlink:href="#home" x="50" y="700" transform="skewY(10)" fill="black"/>      
+</svg>
+        
+<svg id="task_5" width="600" height="500" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="Gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:green;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:orange;stop-opacity:1" />
+        </linearGradient>
+      </defs>
+
+      <circle cx="100" cy="300" r="50" fill="blue" style="stroke:black; stroke-width:3;" onmouseover="this.style.stroke='red';" onmouseout="this.style.stroke='black';" />
+
+      <rect x="160" y="250" width="100" height="100" fill="red" stroke="black" stroke-width="2">
+        <animate attributeName="stroke-dasharray" from="0,400" to="400,0" dur="2s" repeatCount="indefinite" />
+      </rect>
+
+      <ellipse cx="370" cy="300" rx="100" ry="50" fill="green" onclick="this.style.fill = this.style.fill === 'green' ? 'purple' : 'green';" />
+    
+      <polygon points="470,350 530,250 590,350" fill="url(#Gradient)" />
+    
+      <polyline points="50,360 300,360 210,400 600,400" fill="none" stroke="purple" stroke-width="3" />
+</svg>   
+</body>
+</html>

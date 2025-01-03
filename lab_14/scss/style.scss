@@ -1,0 +1,59 @@
+body {
+    p {
+        color: blue;
+        font-size: 16pt;
+    }
+    h1, h2, h3 {
+        color: purple;
+        font-family: 'Monotupe Corsiva';
+        text-align: center;
+    }
+    table {
+        width: 600px;
+        border-collapse: collapse;
+        border: 1px solid black;
+        tr {
+            td {
+                border: 1px solid black; 
+                padding: 8px; 
+            }
+            th {
+                border: 1px solid black; 
+                padding: 8px;
+            }
+        }
+    }
+    ol {
+        li {
+            & > ul.item-frontend {
+                color: red;
+                font-family: 'Times New Roman';
+                font-size: 18pt;
+                li {
+                    list-style-type: disc;
+                }
+            }
+            & > ul.item-backend {
+                color: yellow;
+                font-family: 'Times New Roman';
+                font-size: 20pt;
+                li {
+                    list-style-type: circle;
+                }
+            }
+            & > ul.item-game {
+                color: green;
+                font-family: 'Times New Roman';
+                font-size: 22pt;
+                li {
+                    list-style-type: square;
+                }
+            }
+        }
+    }
+    .svg-links {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+}

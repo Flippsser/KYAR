@@ -1,0 +1,63 @@
+@charset "UTF-8";
+body p {
+  color: blue;
+  font-size: 16pt;
+}
+body .link {
+  color: blueviolet;
+  text-decoration: none;
+}
+body .highlight {
+  color: blueviolet;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  color: purple;
+  font-family: "Monotupe Corsiva";
+  text-align: center;
+}
+body table {
+  width: 600px;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+body table caption {
+  font-size: 1.2em;
+  padding: 10px;
+}
+body table tr td {
+  border: 1px solid black; /* Добавляем границу для ячеек */
+  padding: 8px; /* Опционально, добавим отступы внутри ячеек */
+}
+body table tr th {
+  border: 1px solid black; /* Добавляем границу для заголовков таблицы */
+  padding: 8px;
+}
+body ol li > ul.item-frontend {
+  color: red;
+  font-family: "Times New Roman";
+  font-size: 18pt;
+}
+body ol li > ul.item-frontend li {
+  list-style-type: disc;
+}
+body ol li > ul.item-backend {
+  color: yellow;
+  font-family: "Times New Roman";
+  font-size: 20pt;
+}
+body ol li > ul.item-backend li {
+  list-style-type: circle;
+}
+body ol li > ul.item-game {
+  color: green;
+  font-family: "Times New Roman";
+  font-size: 22pt;
+}
+body ol li > ul.item-game li {
+  list-style-type: square;
+}
+body .svg-links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}/*# sourceMappingURL=style.css.map */
