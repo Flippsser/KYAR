@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="first.css"?>
+<catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="third.xsd">
+    
+        <product>
+
+            <name>Модель процессора: Intel Core i9−14900K</name>
+
+            <characteristica>Техпроцесс(нм): 10</characteristica>
+            
+            <temperatura>Тепловыделение(Вт): 125</temperatura>
+
+            <cost>Цена(₽): 100 000 </cost>
+
+        </product>
+        <product>
+
+            <name>Модель процессора: AMD Ryzen 9 7950X3D</name>
+
+            <characteristica>Техпроцесс(нм): 5</characteristica>
+            
+            <temperatura>Тепловыделение(Вт): 170</temperatura>
+
+            <cost>Цена(₽): 74 000</cost>
+
+        </product>    
+        <product>
+
+            <name>Модель процессора: AMD Ryzen 7 5800X3D</name>
+
+            <characteristica>Техпроцесс(нм): 7</characteristica>
+            
+            <temperatura>Тепловыделение(Вт): 105</temperatura>
+
+            <cost>Цена(₽): 37 000</cost>
+
+        </product>    
+        <product>
+
+            <name>Модель процессора: Intel Core i7−14700K</name>
+
+            <characteristica>Техпроцесс(нм): 10</characteristica>
+            
+            <temperatura>Тепловыделение(Вт): 125</temperatura>
+
+            <cost>Цена(₽): 66 000</cost>
+
+        </product>    
+        <product>
+
+            <name>Модель процессора: AMD Ryzen 5 5600X</name>
+
+            <characteristica>Техпроцесс(нм): 7</characteristica>
+            
+            <temperatura>Тепловыделение(Вт): 65</temperatura>
+
+            <cost>Цена(₽): 17 000</cost>
+
+        </product>    
+    </catalog>

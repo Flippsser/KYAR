@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="first.css"?>
+
+<!DOCTYPE catalog [
+    
+    <!ENTITY model "Модель процессора:">
+    <!ENTITY i9 "Intel Core i9−14900K">
+    <!ENTITY r9 "AMD Ryzen 9 7950X3D">
+    <!ENTITY r7 "AMD Ryzen 7 5800X3D">
+    <!ENTITY i7 "Intel Core i7−14700K">
+    <!ENTITY r5 "AMD Ryzen 5 5600X">
+]>
+
+<catalog>
+    <product>
+
+        <name>&model;&i9;</name>
+
+        <characteristica>Техпроцесс(нм): 10</characteristica>
+        
+        <temperatura>Тепловыделение(Вт): 125</temperatura>
+
+        <cost>Цена(₽): 100 000 </cost>
+
+    </product>
+    <product>
+
+        <name>&model;&r9;</name>
+
+        <characteristica>Техпроцесс(нм): 5</characteristica>
+        
+        <temperatura>Тепловыделение(Вт): 170</temperatura>
+
+        <cost>Цена(₽): 74 000</cost>
+
+    </product>    
+    <product>
+
+        <name>&model;&r7;</name>
+
+        <characteristica>Техпроцесс(нм): 7</characteristica>
+        
+        <temperatura>Тепловыделение(Вт): 105</temperatura>
+
+        <cost>Цена(₽): 37 000</cost>
+
+    </product>    
+    <product>
+
+        <name>&model;&i7;</name>
+
+        <characteristica>Техпроцесс(нм): 10</characteristica>
+        
+        <temperatura>Тепловыделение(Вт): 125</temperatura>
+
+        <cost>Цена(₽): 66 000</cost>
+
+    </product>    
+    <product>
+
+        <name>&model;&r5;</name>
+
+        <characteristica>Техпроцесс(нм): 7</characteristica>
+        
+        <temperatura>Тепловыделение(Вт): 65</temperatura>
+
+        <cost>Цена(₽): 17 000</cost>
+
+    </product>    
+</catalog>
