@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-image: url("/lab_11/image/i.jpg");
+  background-size: 100% 100%;
+}
+header img {
+  height: 110px;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 10px;
+}
+header .menu {
+  margin-right: 5%;
+  margin-top: 10px;
+}
+header .menu ul {
+  display: flex;
+}
+header .menu ul .item-menu {
+  border: 2px solid white;
+  list-style: none;
+  width: 100%;
+  margin: 0 5px;
+  text-align: center;
+  padding: 10px;
+  display: inline-block;
+}
+header .menu ul a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+header .menu ul a:hover {
+  color: red;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 13.3333333333px;
+}
+
+main aside form p input {
+  padding: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+main aside form button {
+  background-color: rgb(167, 173, 0);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px 0 auto;
+}
+
+main {
+  display: flex;
+}
+main .conteiner {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+}
+main .conteiner .section-one h2 {
+  text-align: center;
+  margin-right: 130px;
+}
+main .conteiner .section-one p {
+  text-align: center;
+}
+main .conteiner .section-one .p_first {
+  display: inline-block;
+  width: 20%;
+  padding: 15px;
+  margin-top: 0;
+}
+main .conteiner .section-one #mid_p {
+  margin: 0 100px 25px 100px;
+}
+main .conteiner .section-two h2 {
+  text-align: center;
+}
+main .conteiner .section-two img {
+  width: 20%;
+  height: 80%;
+  margin: 0 20px;
+}
+main aside {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  height: 100%;
+}
+main aside form {
+  display: flex;
+  flex-direction: column;
+  width: 120%;
+  margin-top: 20px;
+}
+main aside form p {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  height: 40px;
+}
+main aside form p label {
+  display: inline-block;
+  width: 150px;
+}
+main aside form button:hover {
+  background-color: rgb(255, 153, 0);
+}
+main aside .other-container h3 {
+  width: 120%;
+  text-align: center;
+}
+main aside .other-container .other-items .art_1 {
+  margin-bottom: 10px;
+}
+main aside .other-container .other-items article {
+  display: flex;
+  align-items: flex-start;
+  width: 125%;
+}
+main aside .other-container .other-items article img {
+  width: 50%;
+}
+main aside .other-container .other-items article p {
+  margin: 2px 0 0 10px;
+  width: 90%;
+  text-align: justify;
+}
+
+footer p {
+  color: rgb(0, 0, 0);
+  padding-left: 20px;
+  margin: 50px;
+}/*# sourceMappingURL=style.css.map */
