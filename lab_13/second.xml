@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="second.xsl"?>
+<gruppa>
+    <student>
+        <familia>Бразовский</familia>
+        <imya>Михаил</imya>
+        <otchestvo>Алексеевич</otchestvo>
+        <mark>9</mark>
+    </student>
+    <student>
+        <familia>Михаилов</familia>
+        <imya>Михаил</imya>
+        <otchestvo>Михаилович</otchestvo>
+        <mark>6</mark>
+    </student>
+    <student>
+        <familia>Владиславов</familia> 
+        <imya>Владислав</imya>
+        <otchestvo>Владиславыч</otchestvo>
+        <mark>2</mark>
+    </student>
+    <student>
+        <familia>Волчанский</familia>
+        <imya>Волк</imya>
+        <otchestvo>Волкович</otchestvo>
+        <mark>7</mark>
+    </student>
+      <student>
+        <familia>Бегунов</familia>
+        <imya>Бег</imya>
+        <otchestvo>Бегунович</otchestvo>
+        <mark>3</mark>
+    </student>
+      <student>
+        <familia>Штангов</familia>
+        <imya>Штанга</imya>
+        <otchestvo>Снарядович</otchestvo>
+        <mark>10</mark>
+    </student>
+      <student>
+        <familia>Это</familia>
+        <imya>Просто</imya>
+        <otchestvo>ААААААААААА</otchestvo>
+        <mark>5</mark>
+    </student>
+    <student>
+        <familia>Но</familia>
+        <imya>Надеюсь</imya>
+        <otchestvo>Выживу</otchestvo>
+        <mark>1</mark>
+    </student>
+</gruppa>

@@ -1,0 +1,22 @@
+name {
+    font-size: 25px;
+    font-weight: bold;
+}
+table {
+    width: 60%;
+    margin: auto; 
+    border-collapse: collapse;
+    border-color: black;
+    background-color: blue;
+}
+th {
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+td {
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+

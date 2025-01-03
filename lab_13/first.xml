@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/xsl" href="first.xsl"?>
+<catalog>
+    <product>
+
+        <name> Intel Core i9−14900K</name>
+
+        <characteristica> 10</characteristica>
+        
+        <temperatura> 125</temperatura>
+
+        <cost> 100 000 </cost>
+
+    </product>
+    <product>
+
+        <name> AMD Ryzen 9 7950X3D</name>
+
+        <characteristica> 5</characteristica>
+        
+        <temperatura> 170</temperatura>
+
+        <cost> 74 000</cost>
+
+    </product>    
+    <product>
+
+        <name> AMD Ryzen 7 5800X3D</name>
+
+        <characteristica> 7</characteristica>
+        
+        <temperatura> 105</temperatura>
+
+        <cost> 37 000</cost>
+
+    </product>    
+    <product>
+
+        <name> Intel Core i7−14700K</name>
+
+        <characteristica> 10</characteristica>
+        
+        <temperatura> 125</temperatura>
+
+        <cost> 66 000</cost>
+
+    </product>    
+    <product>
+
+        <name> AMD Ryzen 5 5600X</name>
+
+        <characteristica> 7</characteristica>
+        
+        <temperatura> 65</temperatura>
+
+        <cost> 17 000</cost>
+
+    </product>    
+</catalog>
