@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="first.css"?>
 
+
 <!DOCTYPE catalog [
     
-    <!ENTITY model "Модель процессора:">
-    <!ENTITY i9 "Intel Core i9−14900K">
-    <!ENTITY r9 "AMD Ryzen 9 7950X3D">
-    <!ENTITY r7 "AMD Ryzen 7 5800X3D">
-    <!ENTITY i7 "Intel Core i7−14700K">
-    <!ENTITY r5 "AMD Ryzen 5 5600X">
+    <!ELEMENT product (name,characteristica,temperatura,cost)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT characteristica (#PCDATA)>
+    <!ELEMENT temperatura (#PCDATA)>
+    <!ELEMENT cost (#PCDATA)>
+    <!ENTITY c "Цена(₽):">
 ]>
-
 <catalog>
     <product>
 
-        <name>&model;&i9;</name>
+        <name>Intel Core i9−14900K</name>
 
         <characteristica>Техпроцесс(нм): 10</characteristica>
         
         <temperatura>Тепловыделение(Вт): 125</temperatura>
 
-        <cost>Цена(₽): 100 000 </cost>
+        <cost>&c; 100 000 </cost>
 
     </product>
     <product>
 
-        <name>&model;&r9;</name>
+        <name>AMD Ryzen 9 7950X3D</name>
 
         <characteristica>Техпроцесс(нм): 5</characteristica>
         
         <temperatura>Тепловыделение(Вт): 170</temperatura>
 
-        <cost>Цена(₽): 74 000</cost>
+        <cost>&c; 74 000</cost>
 
     </product>    
     <product>
 
-        <name>&model;&r7;</name>
+        <name>AMD Ryzen 7 5800X3D</name>
 
         <characteristica>Техпроцесс(нм): 7</characteristica>
         
         <temperatura>Тепловыделение(Вт): 105</temperatura>
 
-        <cost>Цена(₽): 37 000</cost>
+        <cost>&c; 37 000</cost>
 
     </product>    
     <product>
 
-        <name>&model;&i7;</name>
+        <name>Intel Core i7−14700K</name>
 
         <characteristica>Техпроцесс(нм): 10</characteristica>
         
         <temperatura>Тепловыделение(Вт): 125</temperatura>
 
-        <cost>Цена(₽): 66 000</cost>
+        <cost>&c; 66 000</cost>
 
     </product>    
     <product>
 
-        <name>&model;&r5;</name>
+        <name>AMD Ryzen 5 5600X</name>
 
         <characteristica>Техпроцесс(нм): 7</characteristica>
         
         <temperatura>Тепловыделение(Вт): 65</temperatura>
 
-        <cost>Цена(₽): 17 000</cost>
+        <cost>&c; 17 000</cost>
 
     </product>    
 </catalog>
